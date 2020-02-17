@@ -19,8 +19,8 @@ dataSet[dataSetVersion].options = [
     checked: false,
     sub: [
       { name: "Active", key: "active" },
-      { name: "Last activity was more than half a year ago", key: "inactive" },
       { name: "Retired", key: "retired" },
+      { name: "Suspended", key: "suspended" },
     ]
   },
   {
@@ -1274,7 +1274,7 @@ dataSet[dataSetVersion].characterData = [
     channel: "https://www.youtube.com/channel/UCufQu4q65z63IgE4cfKs1BQ",
     opts: {
       agency: ['nijisanji'],
-      status: ['inactive'],
+      status: ['active'],
       gender: ['female'],
     }
   },
@@ -1285,6 +1285,95 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       agency: ['nijisanji'],
       status: ['active'],
+      gender: ['male'],
+    }
+  },
+  {
+    name: "Yamiyono Moruru",
+    img: "M8RfAPq.png",
+    channel: "https://www.youtube.com/channel/UCNUgrFCo2Hr_VXc9bEwjcHQ",
+    opts: {
+      agency: ['nijisanji'],
+      status: ['retired'],
+      gender: ['female'],
+    }
+  },
+  {
+    name: "Setsuna",
+    img: "LbUMFqN.png",
+    channel: "https://www.youtube.com/channel/UCfM_A7lE6LkGrzx6_mOtI4g",
+    opts: {
+      agency: ['nijisanji'],
+      status: ['retired'],
+      gender: ['female'],
+    }
+  },
+  {
+    name: "Hassaku Yuzu",
+    img: "dJ1IqdD.png",
+    channel: "https://www.youtube.com/channel/UCFaDvgez8USXHiKidt0NtZg",
+    opts: {
+      agency: ['nijisanji'],
+      status: ['retired'],
+      gender: ['female'],
+    }
+  },
+  {
+    name: "Nakao Azuma",
+    img: "K2fbt66.png",
+    channel: "https://www.youtube.com/channel/UCks41vQN-hN-1KHmpZyPY3A",
+    opts: {
+      agency: ['nijisanji'],
+      status: ['retired'],
+      gender: ['unknown'],
+    }
+  },
+  {
+    name: "Naruto Kogane",
+    img: "fVLchq3.png",
+    channel: "https://www.youtube.com/channel/UCF1JdALrXgub24weQpqDy9Q",
+    opts: {
+      agency: ['nijisanji'],
+      status: ['retired'],
+      gender: ['unknown'],
+    }
+  },
+  {
+    name: "Umiyashanokami",
+    img: "3h6vWNg.png",
+    channel: "https://www.youtube.com/channel/UCqEp6RdtsMbUNrCdCswr6pA",
+    opts: {
+      agency: ['nijisanji'],
+      status: ['retired'],
+      gender: ['unknown'],
+    }
+  },
+  {
+    name: "Tsukimi Shizuku",
+    img: "FwAbXq9.png",
+    channel: "https://www.youtube.com/channel/UCqQV8xEBWd5SVZBLlYrS_5Q",
+    opts: {
+      agency: ['nijisanji'],
+      status: ['retired'],
+      gender: ['unknown'],
+    }
+  },
+  {
+    name: "Kudo Chitose",
+    img: "L5c6Xix.png",
+    channel: "https://www.youtube.com/channel/UCP2o-o6u4uX3uq1hXspl0rg",
+    opts: {
+      agency: ['nijisanji'],
+      status: ['retired'],
+      gender: ['female'],
+    }
+  },
+  {
+    name: "Shindou Raito",
+    img: "LsSHB97.png",
+    opts: {
+      agency: ['nijisanji'],
+      status: ['suspended'],
       gender: ['male'],
     }
   },
