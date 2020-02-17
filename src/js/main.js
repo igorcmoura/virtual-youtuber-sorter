@@ -286,7 +286,7 @@ function display() {
     const charTooltip = name !== charName ? name : '';
     var charNameText = charName;
     if (channel) {
-      charNameText = `<a class="external" href="${channel}" target="_blank">${charNameText}</a>`;
+      charNameText = `<a class="external" href="${channel}" target="_blank">${charNameText}<img class="external" src="src/assets/external-link-ltr-icon.svg?b4b84" /></a>`;
     }
     return `<p title="${charTooltip}">${charNameText}</p>`;
   };
