@@ -281,10 +281,14 @@ function display() {
   const leftChar        = characterDataToSort[leftCharIndex];
   const rightChar       = characterDataToSort[rightCharIndex];
 
-  const charNameDisp = name => {
+  const charNameDisp = (name, channel) => {
     const charName = reduceTextWidth(name, 'Arial 12.8px', 220);
     const charTooltip = name !== charName ? name : '';
-    return `<p title="${charTooltip}">${charName}</p>`;
+    var charNameText = charName;
+    if (channel) {
+      charNameText = `<a class="external" href="${channel}" target="_blank">${charNameText}</a>`;
+    }
+    return `<p title="${charTooltip}">${charNameText}</p>`;
   };
 
   progressBar(`Battle No. ${battleNo}`, percent);
@@ -292,10 +296,10 @@ function display() {
   document.querySelector('.left.sort.image').src = leftChar.img;
   document.querySelector('.right.sort.image').src = rightChar.img;
 
-  
 
-  document.querySelector('.left.sort.text').innerHTML = charNameDisp(leftChar.name);
-  document.querySelector('.right.sort.text').innerHTML = charNameDisp(rightChar.name);
+
+  document.querySelector('.left.sort.text').innerHTML = charNameDisp(leftChar.name, leftChar.channel);
+  document.querySelector('.right.sort.text').innerHTML = charNameDisp(rightChar.name, rightChar.channel);
 
   /** Autopick if choice has been given. */
   if (choices.length !== battleNo - 1) {

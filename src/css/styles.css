@@ -284,3 +284,10 @@ a:hover {
 a:visited {
   color: #6600FF;
 }
+
+a.external {
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(transparent,transparent),url(src/assets/external-link-ltr-icon.svg?b4b84);
+  padding-right: 13px;
+}
